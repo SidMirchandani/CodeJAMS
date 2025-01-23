@@ -36,24 +36,21 @@
                 <li><img src="https://i.postimg.cc/fWthYk5N/Code-JAMS-1.png" alt="Image from URL" style="float: right;" height = 50px /></li>
                 </p>
             </ul>
+            <span class="star-counter" id="star-system">⭐ 0</span>
         </div>
     </nav>
 
     <!-- Main Content -->
     <main>
-       <section id="compete" class="section">
-         <h3> COMPETE </h3>
-         
-         <div class="cards">
-           <a class="card" href="https://jams.edison.k12.nj.us/"><b>LOCATION: </b> John Adams Middle School, Edison, NJ.</a>
-           <a class="card" href="https://jams.edison.k12.nj.us/"><b>WHO CAN APPLY: </b> All students in Edison from grades K-12!</a>
-           <a class="card" href="https://jams.edison.k12.nj.us/"><b>DIVISIONS: </b> We have 2 divisions, the JUNIOR division is for those in grades 3-5, and the SENIOR division is for those in grades 6-8.</a>
-           <a class="card" href="https://jams.edison.k12.nj.us/"><b>TIMINGS: </b> Dates and timings will be posted soon!</a>
-           <a class="card" href="https://jams.edison.k12.nj.us/"><b>PRICING: </b> The price is $2 per participant.</a>
-           <a class="card" href="https://jams.edison.k12.nj.us/"><b>PRIZES: </b> Prizes will be posted soon!</a>
-           <a class="card" id="join" href="https://jams.edison.k12.nj.us/"><strong>JOIN HERE!</strong></a>
-         </div>
-       </section>
+       <section id="user-login" class="section">
+         <h3>Track Your Progress</h3>
+         <form id="user-form">
+           <input type="text" id="username" placeholder="7-digit username" maxlength="7" required>
+           <button type="submit">Start Tracking</button>
+           <p id="user-message"></p>
+         </form>
+      </section>
+
        
        <section id="problems" class="section">
          <h3> PROBLEMS! </h3>
@@ -67,16 +64,8 @@
          <div class="popup-content">
            <span class="close-btn">&times;</span>
            <h2 id="popup-book-title">Book Title</h2>
-           <input type="text" id="popup-username" class="popup-input" placeholder="Enter your 7-digit username" />
-           <div class="rating" id="popup-rating">
-             <span data-value="5">★</span>
-             <span data-value="4">★</span>
-             <span data-value="3">★</span>
-             <span data-value="2">★</span>
-             <span data-value="1">★</span>
-           </div>
-           <p class="rating-subtitle">Rating puts you in a raffle for free prizes!</p>
-           <a id="popup-link" class="popup-button" href="#" target="_blank">Let's Read!</a>
+           <input type="text" id="popup-username" class="popup-input" placeholder="Enter your answer" />
+           <a id="popup-link" class="popup-button" href="#" target="_blank">Check</a>
          </div>
         </div>
 
