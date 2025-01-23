@@ -379,9 +379,60 @@ h3{
     border-radius: 5px;
     font-size: 16px;
     transition: border-color 0.3s ease-in-out;
+    margin-bottom: 30px;
 }
 
 .popup-input:focus {
     outline: none;
     border-color: #5e17eb;
 }
+
+.star-counter {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+
+#user-login {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#user-login form {
+    margin-top: 20px;
+}
+
+#user-login input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#user-login button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #5e17eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#user-login button:hover {
+    background-color: #3a0da1;
+}
+
+#user-message {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #5e17eb;
+    font-weight: bold;
+}
+
