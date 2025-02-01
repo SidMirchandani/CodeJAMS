@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Code JAMS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="https://i.postimg.cc/cCV9cxx1/Code-JAMS.png" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Firebase SDKs (v8) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <!-- Link to your external CSS file or include inline styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <!--
+      If you prefer to include CSS inline, you can add a <style> tag here.
+      (See the CSS provided in your original code.)
+    -->
   </head>
   <body>
     <!-- Header Section -->
@@ -212,6 +224,12 @@
         </div>
       </section>
 
+      <!-- Leaderboard Section -->
+      <section id="leaderboard" class="section">
+        <h3>Leaderboard</h3>
+        <ul id="leaderboard-list"></ul>
+      </section>
+
       <!-- Popup Section -->
       <div id="book-popup" class="popup hidden">
         <div class="popup-content">
@@ -245,6 +263,22 @@
         </p>
       </div>
     </footer>
+
+    <!-- Firebase Configuration and Initialization -->
+    <script>
+      // TODO: Replace these placeholder values with your own Firebase project settings
+      var firebaseConfig = {
+        apiKey: "YOUR_API_KEY",
+        authDomain: "YOUR_AUTH_DOMAIN",
+        projectId: "YOUR_PROJECT_ID",
+        storageBucket: "YOUR_STORAGE_BUCKET",
+        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+        appId: "YOUR_APP_ID"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      var db = firebase.firestore();
+    </script>
 
     <!-- JavaScript Code -->
     <script>
