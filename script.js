@@ -77,8 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const title = topic.querySelector(".topic-title");
     const content = topic.querySelector(".topic-content");
     title.addEventListener("click", () => {
-      // Toggle the custom "collapsed" class
-      content.classList.toggle("collapsed");
+      content.classList.toggle("hidden");
     });
   });
 
