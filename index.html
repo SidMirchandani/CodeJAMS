@@ -1,51 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Code JAMS</title>
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Firebase SDKs (v8) -->
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-    <!-- Link to your external CSS file or include inline styles -->
-    <link rel="stylesheet" href="styles.css" />
-    <!--
-      If you prefer to include CSS inline, you can add a <style> tag here.
-      (See the CSS provided in your original code.)
-    -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://i.postimg.cc/cCV9cxx1/Code-JAMS.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Header Section -->
     <header>
-      <img
-        src="https://i.postimg.cc/cCV9cxx1/Code-JAMS.png"
-        alt="Code JAMS Logo"
-      />
+      <img src="https://i.postimg.cc/cCV9cxx1/Code-JAMS.png" alt="Code JAMS Logo">
     </header>
     <subheader>
       <div>
-        <a href="https://nordvpn.com/">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGjryC__w5W7qqVkw8wmLh914my0tHoUNaeA&s"
-            height="30px"
-          />
-        </a>
-        <a href="https://nordpass.com/">
-          <img
-            src="https://bestreviews.net/wp-content/uploads/2024/06/nordpass-logo.svg"
-            height="30px"
-          />
-        </a>
+        <a src="https://nordvpn.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGjryC__w5W7qqVkw8wmLh914my0tHoUNaeA&s" height = 30px></a>
+        <a src="https://nordpass.com/"><img src="https://bestreviews.net/wp-content/uploads/2024/06/nordpass-logo.svg" height = 30px></a>
       </div>
     </subheader>
 
@@ -54,12 +29,7 @@
       <div class="container">
         <ul>
           <li>
-            <img
-              src="https://i.postimg.cc/fWthYk5N/Code-JAMS-1.png"
-              alt="Code JAMS Logo"
-              style="float: right;"
-              height="50px"
-            />
+            <img src="https://i.postimg.cc/fWthYk5N/Code-JAMS-1.png" alt="Code JAMS Logo" style="float: right;" height="50px" />
           </li>
         </ul>
         <span class="star-counter" id="star-system">⭐ 0</span>
@@ -68,385 +38,118 @@
 
     <!-- Main Content -->
     <main>
-      <!-- User Login Section -->
       <section id="user-login" class="section">
         <h3>Track Your Progress</h3>
         <form id="user-form">
-          <input type="text" id="username" placeholder="Your 7-digit Username" />
+          <input type="text" id="username" placeholder="Your Username">
           <button type="submit">Start Tracking</button>
           <p id="user-message"></p>
         </form>
       </section>
 
-      <!-- Problems Section -->
+
       <section id="problems" class="section">
         <h3>Questions!</h3>
 
-        <!-- Topic A: Evaluating Prefix Expressions -->
+        <!-- Topic 1 -->
         <div class="topic-card">
           <h4 class="topic-title">Topic A: Evaluating Prefix Expressions</h4>
           <div class="topic-content hidden">
-            <div
-              class="book-card"
-              data-problem-id="problemA1"
-              data-correct-answer="10"
-              data-title="Question A1"
-            >
+            <div class="book-card" data-problem-id="problemA1" data-correct-answer="10" data-title="Question A1">
               <b>QUESTION A1:</b> Evaluate + * 2 3 - 8 4.
             </div>
-            <div
-              class="book-card"
-              data-problem-id="problemA2"
-              data-correct-answer="22"
-              data-title="Question A2"
-            >
+
+            <div class="book-card" data-problem-id="problemA2" data-correct-answer="22" data-title="Question A2">
               <b>QUESTION A2:</b> Evaluate + 5 * 3 6.
             </div>
-            <div
-              class="book-card"
-              data-problem-id="problemA3"
-              data-correct-answer="6"
-              data-title="Question A3"
-            >
+
+            <div class="book-card" data-problem-id="problemA3" data-correct-answer="6" data-title="Question A3">
               <b>QUESTION A3:</b> Evaluate - / 18 3 + 2 2.
             </div>
-            <div
-              class="book-card"
-              data-problem-id="problemA4"
-              data-correct-answer="25"
-              data-title="Question A4"
-            >
+
+            <div class="book-card" data-problem-id="problemA4" data-correct-answer="25" data-title="Question A4">
               <b>QUESTION A4:</b> Evaluate + - 15 5 * 2 5.
             </div>
-            <div
-              class="book-card"
-              data-problem-id="problemA5"
-              data-correct-answer="5"
-              data-title="Question A5"
-            >
+
+            <div class="book-card" data-problem-id="problemA5" data-correct-answer="5" data-title="Question A5">
               <b>QUESTION A5:</b> Evaluate - + 12 3 10.
             </div>
           </div>
         </div>
 
-        <!-- Topic B: Evaluating Postfix Expressions -->
+        <!-- Topic 2 -->
         <div class="topic-card">
           <h4 class="topic-title">Topic B: Evaluating Postfix Expressions</h4>
           <div class="topic-content hidden">
-            <div
-              class="book-card"
-              data-problem-id="problemB1"
-              data-correct-answer="-12"
-              data-title="Question B1"
-            >
+            <div class="book-card" data-problem-id="problemB1" data-correct-answer="-12" data-title="Question B1">
               <b>QUESTION B1:</b> Evaluate 15 7 2 + 3 * -.
             </div>
-            <div
-              class="book-card"
-              data-problem-id="problemB2"
-              data-correct-answer="14"
-              data-title="Question B2"
-            >
+
+            <div class="book-card" data-problem-id="problemB2" data-correct-answer="14" data-title="Question B2">
               <b>QUESTION B2:</b> Evaluate 4 5 * 6 +.
             </div>
-            <div
-              class="book-card"
-              data-problem-id="problemB3"
-              data-correct-answer="7"
-              data-title="Question B3"
-            >
+
+            <div class="book-card" data-problem-id="problemB3" data-correct-answer="7" data-title="Question B3">
               <b>QUESTION B3:</b> Evaluate 10 2 / 3 +.
             </div>
-            <div
-              class="book-card"
-              data-problem-id="problemB4"
-              data-correct-answer="5"
-              data-title="Question B4"
-            >
+
+            <div class="book-card" data-problem-id="problemB4" data-correct-answer="5" data-title="Question B4">
               <b>QUESTION B4:</b> Evaluate 20 5 2 * -.
             </div>
-            <div
-              class="book-card"
-              data-problem-id="problemB5"
-              data-correct-answer="9"
-              data-title="Question B5"
-            >
+
+            <div class="book-card" data-problem-id="problemB5" data-correct-answer="9" data-title="Question B5">
               <b>QUESTION B5:</b> Evaluate 4 5 +.
             </div>
           </div>
         </div>
 
-        <!-- Topic C: Logic Gates -->
+        <!-- Topic 3 -->
         <div class="topic-card">
           <h4 class="topic-title">Topic C: Logic Gates</h4>
           <div class="topic-content hidden">
-            <div
-              class="book-card"
-              data-problem-id="problemC1"
-              data-correct-answer="01010"
-              data-title="Question C1"
-            >
+            <div class="book-card" data-problem-id="problemC1" data-correct-answer="01010" data-title="Question C1">
               <b>QUESTION C1:</b> Evaluate (NOT 10110 OR 10100 AND 00111) XOR (11111 NOR 01010).
             </div>
-            <div
-              class="book-card"
-              data-problem-id="problemC2"
-              data-correct-answer="11111"
-              data-title="Question C2"
-            >
+
+            <div class="book-card" data-problem-id="problemC2" data-correct-answer="11111" data-title="Question C2">
               <b>QUESTION C2:</b> Evaluate 10110 AND 11101 OR NOT 01010.
             </div>
-            <div
-              class="book-card"
-              data-problem-id="problemC3"
-              data-correct-answer="00000"
-              data-title="Question C3"
-            >
+
+            <div class="book-card" data-problem-id="problemC3" data-correct-answer="00000" data-title="Question C3">
               <b>QUESTION C3:</b> Evaluate (NOT 11111 AND 00000 OR 01010).
             </div>
-            <div
-              class="book-card"
-              data-problem-id="problemC4"
-              data-correct-answer="10101"
-              data-title="Question C4"
-            >
+
+            <div class="book-card" data-problem-id="problemC4" data-correct-answer="10101" data-title="Question C4">
               <b>QUESTION C4:</b> Evaluate (11100 XOR 01010 OR 00101).
             </div>
-            <div
-              class="book-card"
-              data-problem-id="problemC5"
-              data-correct-answer="10010"
-              data-title="Question C5"
-            >
+
+            <div class="book-card" data-problem-id="problemC5" data-correct-answer="10010" data-title="Question C5">
               <b>QUESTION C5:</b> Evaluate (10101 XOR NOT 01101 AND 11100).
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Leaderboard Section -->
-      <section id="leaderboard" class="section">
-        <h3>Leaderboard</h3>
-        <ul id="leaderboard-list"></ul>
-      </section>
 
-      <!-- Popup Section -->
       <div id="book-popup" class="popup hidden">
         <div class="popup-content">
           <span class="close-btn">&times;</span>
           <h2 id="popup-book-title">Book Title</h2>
-          <input
-            type="text"
-            id="popup-username"
-            class="popup-input"
-            placeholder="Enter your answer"
-          />
-          <a
-            id="popup-link"
-            class="popup-button"
-            href="#"
-            target="_blank"
-            >Check</a
-          >
-          <button id="report-button" class="popup-button report-button">
-            Report Question
-          </button>
+          <input type="text" id="popup-username" class="popup-input" placeholder="Enter your answer" />
+          <a id="popup-link" class="popup-button" href="#" target="_blank">Check</a>
+          <button id="report-button" class="popup-button report-button">Report Question</button>
         </div>
       </div>
+
     </main>
 
     <!-- Footer Section -->
     <footer>
       <div class="container" id="final">
-        <p>
-          &copy; This is a John Adams Middle School 501(c)(3) Organization.
-        </p>
+        <p>&copy; This is a John Adams Middle School 501(c)(3) Organization.</p>
       </div>
     </footer>
 
-    <!-- Firebase Configuration and Initialization -->
-    <script>
-      // TODO: Replace these placeholder values with your own Firebase project settings
-      var firebaseConfig = {
-        apiKey: "YOUR_API_KEY",
-        authDomain: "YOUR_AUTH_DOMAIN",
-        projectId: "YOUR_PROJECT_ID",
-        storageBucket: "YOUR_STORAGE_BUCKET",
-        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-        appId: "YOUR_APP_ID"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      var db = firebase.firestore();
-    </script>
-
-    <!-- JavaScript Code -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        // DOM Elements
-        const bookCards = document.querySelectorAll(".book-card"); // All book cards
-        const topics = document.querySelectorAll(".topic-card"); // All topic cards
-        const popup = document.getElementById("book-popup"); // Popup container
-        const popupTitle = document.getElementById("popup-book-title"); // Popup title
-        const popupInput = document.getElementById("popup-username"); // Answer input field
-        const popupButton = document.getElementById("popup-link"); // "Check Answer" button
-        const closeBtn = document.querySelector(".close-btn"); // Close button for popup
-        const reportButton = document.getElementById("report-button"); // "Report Question" button
-        const starSystem = document.getElementById("star-system"); // Star counter
-        const userForm = document.getElementById("user-form"); // Username form
-        const usernameInput = document.getElementById("username"); // Username input
-        const userMessage = document.getElementById("user-message"); // Message under the form
-        const leaderboardList = document.getElementById("leaderboard-list"); // Leaderboard list
-
-        let correctAnswer = ""; // Correct answer for current problem
-        let problemID = ""; // Current problem ID
-        let username = ""; // Current username
-
-        // Helper: Update Leaderboard (Top 10 users by stars)
-        async function updateLeaderboard() {
-          leaderboardList.innerHTML = ""; // Clear the list
-          try {
-            const snapshot = await db
-              .collection("userProgress")
-              .orderBy("stars", "desc")
-              .limit(10)
-              .get();
-            snapshot.forEach((doc) => {
-              const li = document.createElement("li");
-              const data = doc.data();
-              li.textContent = `${doc.id}: ${data.stars} star${
-                data.stars !== 1 ? "s" : ""
-              }`;
-              leaderboardList.appendChild(li);
-            });
-          } catch (error) {
-            console.error("Error updating leaderboard:", error);
-          }
-        }
-
-        // Handle username submission
-        userForm.addEventListener("submit", async (event) => {
-          event.preventDefault();
-          const inputUsername = usernameInput.value.trim();
-          if (/^\d{7}$/.test(inputUsername)) {
-            // Validate username as a 7-digit number
-            username = inputUsername;
-            const userDocRef = db.collection("userProgress").doc(username);
-            try {
-              const docSnap = await userDocRef.get();
-              if (docSnap.exists) {
-                // User exists – load their progress
-                const userData = docSnap.data();
-                starSystem.textContent = `⭐ ${userData.stars}`;
-                userMessage.textContent = `Welcome back, ${username}! Your progress is being tracked.`;
-              } else {
-                // New user – initialize progress
-                await userDocRef.set({ stars: 0, solvedProblems: [] });
-                starSystem.textContent = `⭐ 0`;
-                userMessage.textContent = `Welcome, ${username}! Your progress is now being tracked.`;
-              }
-              userMessage.style.color = ""; // Reset message color
-              // Update leaderboard whenever a user logs in
-              updateLeaderboard();
-            } catch (error) {
-              console.error("Error accessing user progress:", error);
-            }
-          } else {
-            userMessage.textContent = "Please enter a valid 7-digit username.";
-            userMessage.style.color = "red";
-            setTimeout(() => (userMessage.textContent = ""), 3000);
-          }
-        });
-
-        // Expand/collapse topics
-        topics.forEach((topic) => {
-          const title = topic.querySelector(".topic-title");
-          const content = topic.querySelector(".topic-content");
-          title.addEventListener("click", () => {
-            content.classList.toggle("hidden");
-          });
-        });
-
-        // Show popup on book-card click
-        bookCards.forEach((card) => {
-          card.addEventListener("click", (event) => {
-            event.preventDefault(); // Prevent default navigation
-            if (!username) {
-              alert("Please enter your username first to start tracking progress.");
-              return;
-            }
-            problemID = card.getAttribute("data-problem-id");
-            correctAnswer = card.getAttribute("data-correct-answer");
-            const title = card.getAttribute("data-title");
-            popupTitle.textContent = title;
-            popupInput.value = "";
-            popupInput.style.borderColor = "";
-            popup.classList.add("visible"); // Show popup
-          });
-        });
-
-        // Close popup
-        closeBtn.addEventListener("click", () => {
-          popup.classList.remove("visible"); // Hide popup
-        });
-
-        // Check Answer (and update progress online)
-        popupButton.addEventListener("click", async (event) => {
-          event.preventDefault();
-          const userAnswer = popupInput.value.trim();
-          if (!username) {
-            alert("Please log in with your username first.");
-            return;
-          }
-          const userDocRef = db.collection("userProgress").doc(username);
-          try {
-            const docSnap = await userDocRef.get();
-            const userData = docSnap.data();
-            // Check if problem is already solved
-            if (userData.solvedProblems.includes(problemID)) {
-              popupInput.style.borderColor = "orange";
-            } else if (userAnswer === correctAnswer) {
-              popupInput.style.borderColor = "green";
-              const newStars = userData.stars + 1;
-              const newSolved = [...userData.solvedProblems, problemID];
-              // Update Firestore with new progress
-              await userDocRef.update({ stars: newStars, solvedProblems: newSolved });
-              starSystem.textContent = `⭐ ${newStars}`;
-              updateLeaderboard(); // Refresh leaderboard after progress change
-            } else {
-              // Incorrect answer
-              popupInput.style.borderColor = "red";
-              setTimeout(() => {
-                popupInput.style.borderColor = "";
-              }, 500);
-            }
-          } catch (error) {
-            console.error("Error updating user progress:", error);
-          }
-        });
-
-        // Report Question Functionality
-        reportButton.addEventListener("click", async () => {
-          if (!username) {
-            alert("Please log in with your username to report a question.");
-            return;
-          }
-          const reportMessage = `The question "${popupTitle.textContent}" has been reported. Thank you!`;
-          alert(reportMessage);
-          try {
-            await db.collection("reportedQuestions").add({
-              username,
-              question: popupTitle.textContent,
-              timestamp: firebase.firestore.FieldValue.serverTimestamp()
-            });
-          } catch (error) {
-            console.error("Error reporting question:", error);
-          }
-        });
-
-        // Optionally, update the leaderboard when the page loads
-        updateLeaderboard();
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
